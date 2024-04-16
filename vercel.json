@@ -4,15 +4,7 @@
     {
       "src": "./index.js",
       "use": "@vercel/node"
-    },
-    {
-      "src": "./routeAll/routeAll.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "./routeById/routeById.js",
-      "use": "@vercel/node"
-    },
+    }
   ],
   "routes": [
     {
@@ -20,7 +12,7 @@
       "dest": "./routeAll/routeAll.js"
     },
     {
-      "src": "/pegawai/(.*)",
+      "src": "/pegawai/:id",
       "dest": "./routeById/routeById.js"
     }
   ]
