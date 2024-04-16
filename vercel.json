@@ -14,10 +14,6 @@
     {
       "src": "/pegawai/(.*)",
       "dest": "./routeById/routeById.js"
-    },
-    {
-      "src": "(.*)",
-      "dest": "./routeError/routeError.js"
-    },
+    }
   ]
 }
