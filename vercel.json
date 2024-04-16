@@ -4,19 +4,7 @@
     {
       "src": "./index.js",
       "use": "@vercel/node"
-    },
-    {
-      "src": "./routeAll/routeAll.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "./routeById/routeById.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "./routeError/routeError.js",
-      "use": "@vercel/node"
-    },
+    }
   ],
   "routes": [
     {
