@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "./index.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "./routeAll/routeAll.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "./routeById/routeById.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "./routeError/routeError.js",
+      "use": "@vercel/node"
+    },
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "./routeAll/routeAll.js"
+    },
+    {
+      "src": "/pegawai/(.*)",
+      "dest": "./routeById/routeById.js"
+    },
+    {
+      "src": "(.*)",
+      "dest": "./routeError/routeError.js"
+    },
+  ]
+}
